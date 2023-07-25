@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="/assets/fevicon.png" type="/assets/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Blog</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/assets/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="/assets/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/assets/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/assets/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>Blog</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/articles">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <form class="form-inline">
+                <button class="btn   nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call : +01 123455678990
+                </span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <p style="color:white">
+                      <%= yield%>
+                    </p>
+                    <p>
+                      More Articles Comming soon...
+                      </p>
+                    <div class="btn-box">
+                      <a href="<%= articles_path %>" class="btn-1">
+                        Go to Articles
+                      </a>
+                      <a href="/contact" class="btn-2">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="/assets/slider-img.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+       
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Most Read Blogs
+        </h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                WellBeing International Studies Repository
+              </h4>
+              <p>
+                Public demand for information has grown dramatically in the past twenty years....
+              </p>
+              <a href="<%= article_path(4) %>">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                WellBeing International Website
+              </h4>
+              <p>
+                WBI’s website is a central component in delivering WBI’s Global Awareness goals and objectives....
+              </p>
+              <a href="<%= article_path(5) %>">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Direct Outreach
+              </h4>
+              <p>
+                WBI’s direct outreach involves two different newsletters produced on a monthly schedule....
+              </p>
+              <a href="<%= article_path(6) %>">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Biden names CIA Director William Burns to his cabinet
+              </h4>
+              <p>
+                WASHINGTON, July 21 (Reuters) - U.S. President Joe Biden on Friday said.....
+              </p>
+              <a href="<%= article_path(7) %>">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s5.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                India's ICICI Bank beats estimates with record April-June net profit
+              </h4>
+              <p>
+                MUMBAI, July 22 (Reuters) - ICICI Bank (ICBK.NS) beat first-quarter....
+              </p>
+              <a href="<%= article_path(8) %>">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s6.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Russia pounds Ukraine's grain, UN warns of hunger from price rises
+              </h4>
+              <p>
+                KYIV, July 21 (Reuters) - Russia pounded Ukrainian food export facilities for a....
+              </p>
+              <a href="<%= article_path(10) %>">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
+            </div>
+            <p>
+              At Blog, we believe in the power of words to inspire, educate, and connect people from all walks of life. Our blog is a digital haven where creativity thrives, ideas flourish, and diverse perspectives converge. We are a passionate team of writers, thinkers, and storytellers, committed to curating an enriching and delightful reading experience for our cherished community of readers.</p>
+            <a href="/about">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="assets/about-img.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- client section -->
+  <section class="client_section ">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+        <p>
+          few people who liked our blogs...
+        </p>
+      </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 mx-auto">
+                  <div class="box">
+                    <div class="img-box">
+                      <img src="images/client.jpg" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <div class="client_info">
+                        <div class="client_name">
+                          <h5>
+                            Emma M.
+                          </h5>
+                          <h6>
+                            Avid Reader and Blogger
+                          </h6>
+                        </div>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                        "I stumbled upon this blog website while looking for some interesting reads, and it's become my go-to platform for thought-provoking articles and engaging content. The diverse range of topics covered is impressive, and the writers truly know how to captivate their audience. I find myself coming back daily for fresh insights and inspiration!"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+ 
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Karnataka
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  flamekaiser@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="articles_path">
+                <img src="assets/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="" href="/about">
+                <img src="assets/nav-bullet.png" alt="">
+                About
+              </a>
+              <a class="" href="/contact">
+                <img src="assets/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              All type of blogs are available...
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-0">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">@Flame Kaiser</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="assets/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="assets/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="assets/custom.js"></script>
+
+
+</body>
+
+</html>
